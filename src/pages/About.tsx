@@ -5,8 +5,7 @@ import {
   Globe,
   Zap,
   ShieldCheck,
-  Gamepad2,
-  Sparkles
+  Gamepad2
 } from 'lucide-react';
 import {
   FadeIn,

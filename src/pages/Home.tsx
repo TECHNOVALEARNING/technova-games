@@ -41,7 +41,7 @@ export const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <StaggerContainer
             staggerDelay={0.1}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8"
           >
             {/* Feature 1 */}
             <StaggerItem>
@@ -93,24 +93,6 @@ export const Home: React.FC = () => {
                     Accès Totalement Libre
                   </h4>
                   <p className="text-xs text-slate-500">Aucun compte joueur obligatoire</p>
-                </div>
-              </motion.div>
-            </StaggerItem>
-
-            {/* Feature 4 */}
-            <StaggerItem>
-              <motion.div
-                whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                className="flex items-center gap-3.5 group cursor-default p-2 rounded-xl transition-colors"
-              >
-                <div className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center text-emerald-600 shrink-0 group-hover:scale-110 group-hover:bg-emerald-100/70 transition-all duration-300 shadow-xs">
-                  <Gamepad2 className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900 tracking-tight font-heading">
-                    Moteur 60 FPS
-                  </h4>
-                  <p className="text-xs text-slate-500">Expériences HTML5 & WebGL réactives</p>
                 </div>
               </motion.div>
             </StaggerItem>

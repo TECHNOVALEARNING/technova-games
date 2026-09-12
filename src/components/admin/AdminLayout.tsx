@@ -8,12 +8,11 @@ import {
   LogOut, 
   Menu, 
   X, 
-  ExternalLink,
-  CheckCircle2
+  ExternalLink
 } from 'lucide-react';
 
 export const AdminLayout: React.FC = () => {
-  const { user, logout, isSupabaseConnected, isDemoAdmin } = useAuth();
+  const { user, logout } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);

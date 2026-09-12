@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { HelpCircle, ChevronDown, Sparkles, ArrowRight, ShieldCheck, Globe, Zap, MessageSquare } from 'lucide-react';
+import { HelpCircle, ChevronDown, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FadeIn, StaggerContainer, StaggerItem, smoothEase } from '../components/MotionReveal';
 
