@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-technova-green: #10b981;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  --font-tech: 'Space Grotesk', sans-serif;
+}
+
+/* Base smoothing and layout */
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Arrière-plan prestigieux avec dégradé atmosphérique subtil */
+body {
+  min-height: 100vh;
+  color: #0f172a;
+  background-color: #f8fafc;
+  background-image: 
+    /* Halo supérieur émeraude vibrant mais discret sous le header */
+    radial-gradient(ellipse 90% 50% at 50% -10%, rgba(16, 185, 129, 0.14) 0%, transparent 65%),
+    /* Lueur subtile cyan/turquoise sur la droite */
+    radial-gradient(circle 700px at 95% 25%, rgba(45, 212, 191, 0.09) 0%, transparent 70%),
+    /* Lueur émeraude douce sur la gauche vers le milieu */
+    radial-gradient(circle 750px at 5% 55%, rgba(16, 185, 129, 0.09) 0%, transparent 70%),
+    /* Délicate touche indigo/bleu pastel vers le bas droit */
+    radial-gradient(ellipse 700px 500px at 90% 85%, rgba(99, 102, 241, 0.06) 0%, transparent 70%),
+    /* Dégradé de base vertical pour une texture riche */
+    linear-gradient(180deg, #ffffff 0%, #fafbfc 20%, #f1f5f9 60%, #e9eef4 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+  border: 2px solid #f1f5f9;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Smooth selection */
+::selection {
+  background: rgba(16, 185, 129, 0.2);
+  color: #047857;
+}
