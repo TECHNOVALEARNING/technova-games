@@ -25,9 +25,9 @@ import { ProtectedRoute } from './components/admin/ProtectedRoute';
 // Public Layout Wrapper with Sticky Navbar & Footer
 const PublicLayout: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen text-slate-900">
+    <div className="flex flex-col min-h-screen text-slate-900 overflow-x-clip w-full">
       <Navbar />
-      <main className="flex-1 flex flex-col">
+      <main className="flex-1 flex flex-col overflow-x-clip w-full">
         <Outlet />
       </main>
       <Footer />

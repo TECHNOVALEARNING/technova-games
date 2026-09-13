@@ -163,20 +163,32 @@ export const ConvergeItem: React.FC<ConvergeItemProps> = ({
   delay = 0,
   ...props
 }) => {
-  const initial =
-    position === 'left'
+  const [isDesktop, setIsDesktop] = React.useState(false);
+
+  React.useEffect(() => {
+    const check = () => {
+      setIsDesktop(typeof window !== 'undefined' && window.innerWidth >= 768);
+    };
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
+  const initial = isDesktop
+    ? position === 'left'
       ? { opacity: 0, x: -40, y: 15, scale: 0.95 }
       : position === 'right'
       ? { opacity: 0, x: 40, y: 15, scale: 0.95 }
-      : { opacity: 0, y: 30, scale: 0.93 };
+      : { opacity: 0, y: 30, scale: 0.93 }
+    : { opacity: 0, y: 25, scale: 0.96 };
 
   return (
     <motion.div
       initial={initial}
       whileInView={{ opacity: 1, x: 0, y: 0, scale: 1 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.15 }}
       transition={{
-        duration: 0.75,
+        duration: 0.7,
         delay,
         ease: smoothEase,
       }}

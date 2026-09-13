@@ -17,9 +17,9 @@ import { motion } from 'framer-motion';
 
 export const About: React.FC = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 w-full flex-1 font-sans">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-20 w-full flex-1 font-sans overflow-x-clip">
       {/* 1. EN-TÊTE PRINCIPALE */}
-      <FadeIn distance={30} className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+      <FadeIn distance={30} className="text-center max-w-3xl mx-auto mb-14 sm:mb-20">
         <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12] mb-5">
           Le portail officiel de tous les <br className="hidden sm:inline" />
           <span className="text-emerald-600">jeux web créés par Technova</span>
@@ -30,7 +30,7 @@ export const About: React.FC = () => {
       </FadeIn>
 
       {/* 2. CE QUE FAIT LA PLATEFORME */}
-      <FadeIn distance={25} className="bg-white rounded-3xl border border-slate-200/90 p-8 sm:p-14 mb-14 shadow-xs">
+      <FadeIn distance={25} className="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-14 mb-14 shadow-xs">
         <div className="max-w-3xl">
           <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2 block font-heading">
             Notre Mission
@@ -107,12 +107,12 @@ export const About: React.FC = () => {
       </FadeIn>
 
       {/* 3. NOS ENGAGEMENTS POUR LES JOUEURS (Effet de convergence fluide) */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-16 overflow-x-clip">
         {/* Engagement 1 : 100% en ligne */}
         <ConvergeItem position="left" delay={0.05}>
           <motion.div
             whileHover={{ y: -6, transition: { duration: 0.25, ease: 'easeOut' } }}
-            className="p-8 rounded-3xl bg-white border border-slate-200/90 shadow-xs hover:border-emerald-500/70 hover:shadow-xl hover:shadow-emerald-500/5 transition-colors duration-300 space-y-4 h-full"
+            className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-xs hover:border-emerald-500/70 hover:shadow-xl hover:shadow-emerald-500/5 transition-colors duration-300 space-y-4 h-full"
           >
             <div className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center text-emerald-600">
               <Globe className="w-6 h-6" />
@@ -130,7 +130,7 @@ export const About: React.FC = () => {
         <ConvergeItem position="center" delay={0.15}>
           <motion.div
             whileHover={{ y: -6, transition: { duration: 0.25, ease: 'easeOut' } }}
-            className="p-8 rounded-3xl bg-white border border-slate-200/90 shadow-xs hover:border-emerald-500/70 hover:shadow-xl hover:shadow-emerald-500/5 transition-colors duration-300 space-y-4 h-full"
+            className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-xs hover:border-emerald-500/70 hover:shadow-xl hover:shadow-emerald-500/5 transition-colors duration-300 space-y-4 h-full"
           >
             <div className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center text-emerald-600">
               <ShieldCheck className="w-6 h-6" />
@@ -148,23 +148,23 @@ export const About: React.FC = () => {
         <ConvergeItem position="right" delay={0.25}>
           <motion.div
             whileHover={{ y: -6, transition: { duration: 0.25, ease: 'easeOut' } }}
-            className="p-8 rounded-3xl bg-white border border-slate-200/90 shadow-xs hover:border-emerald-500/70 hover:shadow-xl hover:shadow-emerald-500/5 transition-colors duration-300 space-y-4 h-full"
+            className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-xs hover:border-emerald-500/70 hover:shadow-xl hover:shadow-emerald-500/5 transition-colors duration-300 space-y-4 h-full"
           >
             <div className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center text-emerald-600">
               <Zap className="w-6 h-6" />
             </div>
             <h3 className="font-heading text-xl font-bold text-slate-900">
-              Fluide & Réactif (60 FPS)
+              Fluide & Ultra Réactif
             </h3>
             <p className="text-slate-600 text-sm leading-relaxed">
-              Nous concevons des jeux légers, optimisés pour un chargement rapide et une réactivité maximale sur les technologies web modernes.
+              Nous concevons des jeux légers, optimisés pour un chargement immédiat et une réactivité maximale sur les technologies web modernes.
             </p>
           </motion.div>
         </ConvergeItem>
       </div>
 
       {/* 4. APPEL À L'ACTION FINAL AVEC MICRO-ANIMATION */}
-      <FadeIn distance={20} className="rounded-3xl bg-gradient-to-r from-emerald-600 to-teal-700 p-8 sm:p-12 text-white shadow-xl shadow-emerald-900/10 flex flex-col md:flex-row items-center justify-between gap-8">
+      <FadeIn distance={20} className="rounded-3xl bg-gradient-to-r from-emerald-600 to-teal-700 p-6 sm:p-12 text-white shadow-xl shadow-emerald-900/10 flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="space-y-2 text-center md:text-left">
           <div className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-widest text-emerald-200 mb-1">
             <Gamepad2 className="w-4 h-4" />
