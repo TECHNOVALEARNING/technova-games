@@ -236,22 +236,20 @@ export const Home: React.FC = () => {
                 href="https://www.technovalearning.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-6 rounded-2xl bg-[#f8fafc] border border-slate-200/90 hover:border-emerald-500 hover:bg-white shadow-2xs hover:shadow-lg hover:shadow-emerald-500/5 transition-colors duration-300 flex flex-col justify-between group h-full cursor-pointer"
+                className="p-6 sm:p-7 rounded-2xl bg-[#f8fafc] border border-slate-200/90 hover:border-emerald-500 hover:bg-white shadow-2xs hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 flex flex-col justify-between group h-full cursor-pointer"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="font-extrabold text-base text-slate-900 group-hover:text-emerald-600 transition-colors font-heading">
+                    <span className="font-extrabold text-base sm:text-lg text-slate-900 group-hover:text-emerald-600 transition-colors font-heading">
                       Technova Learning
                     </span>
-                    <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    <div className="w-8 h-8 rounded-xl bg-white border border-slate-200/80 group-hover:border-emerald-200 group-hover:bg-emerald-50 flex items-center justify-center text-slate-400 group-hover:text-emerald-600 transition-all duration-200 shadow-2xs">
+                      <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </div>
                   </div>
-                  <p className="text-xs text-slate-500 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
                     Plateforme de formation interactive et d'apprentissage numérique pour monter en compétences.
                   </p>
-                </div>
-                <div className="flex items-center justify-between pt-4 mt-4 border-t border-slate-200/70 text-[11px] font-bold text-emerald-600">
-                  <span>www.technovalearning.com</span>
-                  <span className="group-hover:translate-x-1 transition-transform">Visiter ↗</span>
                 </div>
               </motion.a>
             </StaggerItem>
@@ -263,22 +261,20 @@ export const Home: React.FC = () => {
                 href="https://www.sonorya.co"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-6 rounded-2xl bg-[#f8fafc] border border-slate-200/90 hover:border-emerald-500 hover:bg-white shadow-2xs hover:shadow-lg hover:shadow-emerald-500/5 transition-colors duration-300 flex flex-col justify-between group h-full cursor-pointer"
+                className="p-6 sm:p-7 rounded-2xl bg-[#f8fafc] border border-slate-200/90 hover:border-emerald-500 hover:bg-white shadow-2xs hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 flex flex-col justify-between group h-full cursor-pointer"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="font-extrabold text-base text-slate-900 group-hover:text-emerald-600 transition-colors font-heading">
+                    <span className="font-extrabold text-base sm:text-lg text-slate-900 group-hover:text-emerald-600 transition-colors font-heading">
                       Sonorya
                     </span>
-                    <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    <div className="w-8 h-8 rounded-xl bg-white border border-slate-200/80 group-hover:border-emerald-200 group-hover:bg-emerald-50 flex items-center justify-center text-slate-400 group-hover:text-emerald-600 transition-all duration-200 shadow-2xs">
+                      <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </div>
                   </div>
-                  <p className="text-xs text-slate-500 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
                     Expériences audio immersives et création d'univers sonores de nouvelle génération.
                   </p>
-                </div>
-                <div className="flex items-center justify-between pt-4 mt-4 border-t border-slate-200/70 text-[11px] font-bold text-emerald-600">
-                  <span>www.sonorya.co</span>
-                  <span className="group-hover:translate-x-1 transition-transform">Visiter ↗</span>
                 </div>
               </motion.a>
             </StaggerItem>
@@ -290,22 +286,20 @@ export const Home: React.FC = () => {
                 href="https://www.humanizerai.space"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-6 rounded-2xl bg-[#f8fafc] border border-slate-200/90 hover:border-emerald-500 hover:bg-white shadow-2xs hover:shadow-lg hover:shadow-emerald-500/5 transition-colors duration-300 flex flex-col justify-between group h-full cursor-pointer"
+                className="p-6 sm:p-7 rounded-2xl bg-[#f8fafc] border border-slate-200/90 hover:border-emerald-500 hover:bg-white shadow-2xs hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 flex flex-col justify-between group h-full cursor-pointer"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="font-extrabold text-base text-slate-900 group-hover:text-emerald-600 transition-colors font-heading">
+                    <span className="font-extrabold text-base sm:text-lg text-slate-900 group-hover:text-emerald-600 transition-colors font-heading">
                       Humanizer
                     </span>
-                    <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    <div className="w-8 h-8 rounded-xl bg-white border border-slate-200/80 group-hover:border-emerald-200 group-hover:bg-emerald-50 flex items-center justify-center text-slate-400 group-hover:text-emerald-600 transition-all duration-200 shadow-2xs">
+                      <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </div>
                   </div>
-                  <p className="text-xs text-slate-500 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
                     Solutions et outils avancés basés sur l'intelligence artificielle pour humaniser et enrichir vos contenus.
                   </p>
-                </div>
-                <div className="flex items-center justify-between pt-4 mt-4 border-t border-slate-200/70 text-[11px] font-bold text-emerald-600">
-                  <span>www.humanizerai.space</span>
-                  <span className="group-hover:translate-x-1 transition-transform">Visiter ↗</span>
                 </div>
               </motion.a>
             </StaggerItem>
